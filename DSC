@@ -1,6 +1,6 @@
 Configuration IISWebServers
 {
-    Node "160.75.100.172"
+    Node "X.X.X.X"
         {
           WindowsFeature 
           {
