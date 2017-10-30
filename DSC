@@ -1,0 +1,23 @@
+Configuration IISWebServers
+{
+    Node "160.75.100.172"
+        {
+          WindowsFeature 
+          {
+            Ensure = "Present"
+            Name = "Web-Server"
+            IncludeAllSubFeature = $true
+          }
+        }
+}
+
+IISWebServers "."
+
+
+
+
+
+Start-DscConfiguration -Path .\IISWebServers -Wait -Verbose
+
+
+
